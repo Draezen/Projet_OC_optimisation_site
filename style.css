@@ -677,7 +677,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -1033,6 +1033,9 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+}
+blockquote p {
+    font-size: 20px;
 }
 
 @media (max-width: 767px) {

@@ -335,8 +335,7 @@ a:hover {
     text-align: inherit;
 }
 
-.nav > li a:hover/*,
-.nav > li a:focus */{
+.nav > li a:hover{
     background: transparent;
 }
 
@@ -769,6 +768,11 @@ h4 {
     text-decoration: underline!important;
 }
 
+#mail-contact{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
 .bgc-white {
     background-color: #FFFFFF;
 }
@@ -791,8 +795,22 @@ h4 {
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #7f482e !important;
+    color: #FFFFFF !important;
+}
+
+.btn-atomic-tangerine:focus {
+    background: #7f482e !important;
+    box-shadow: 0 0 10px 10px #F3976C;
+    color: #FFFFFF !important;
+}
+
+.link-focus:focus, .navbar-brand:focus, .image-focus:focus, .mail-focus:focus{
+    box-shadow: 0 0 10px 10px #F3976C;
+}
+
+.icon-focus:focus > span{
+    box-shadow: 0 0 10px 10px #ffffff;
 }
 
 .ltc-white {

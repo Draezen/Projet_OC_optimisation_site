@@ -456,10 +456,13 @@ nav .caret {
 }
 
 .btn-d,
-.btn-d:hover,
-.btn-d:focus {  
+.btn-d:hover {  
     color: #FFF;
-    background: rgba(0, 0, 0, .3);
+    background: rgba(0, 0, 0, 0.9);
+}
+
+.btn-d:focus{
+    box-shadow: 0 0 10px 10px #ffffff;
 }
 
 button {
@@ -521,16 +524,19 @@ button {
     opacity: 0;
     z-index: 500;
     transition: all .3s ease-in-out;
+    background-color: #000000;
 }
 
 .scrollToTop span {
     margin-top: 6px;
+    color: #ffffff;
 }
 
 .showScrollTop {
     font-size: 14px;
     opacity: 1;
 }
+
 
 a[data-lightbox] {
     position: relative;
@@ -541,7 +547,7 @@ a[data-lightbox] {
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
-    font-size: 32px;
+    font-size: 34px;
     width: 50px;
     height: 50px;
     margin-left: -25px;
@@ -595,30 +601,36 @@ a[data-lightbox]:hover img {
     top: 20px;
     right: 20px;
     z-index: 20;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 1);
     border: none;
     line-height: 30px;
-    padding: 0 9px 5px;
-    opacity: 0.3;
+    padding: 3px 9px ;
+    opacity: 0.7;
 }
 
 .close-lightbox:hover,
 .next-lightbox:hover,
 .prev-lightbox:hover {
     opacity: 1.0;
-    color: #FFF;
+    color: #FFFF;
+}
+
+.close-lightbox:focus,
+.next-lightbox:focus,
+.prev-lightbox:focus {
+    box-shadow: 0 0 10px 10px #F3976C;
 }
 
 .next-lightbox,
 .prev-lightbox {
     font-size: 20px;
-    color: rgba(255, 255, 255, .9);
-    background: rgba(0, 0, 0, .5);
+    color: rgba(255, 255, 255, 1)!important;
+    background: rgba(0, 0, 0, 1);
     transition: all .2s ease-in-out;
     position: absolute;
-    top: 45%;
+    top: 50%;
     z-index: 1;
-    opacity: 0.4;
+    opacity: 0.7;
 }
 
 .next-lightbox {
@@ -627,7 +639,7 @@ a[data-lightbox]:hover img {
 }
 
 .prev-lightbox {
-    padding: 6px 13px 1px 10px;
+    padding: 4px 13px 3px 10px;
     left: 25px;
 }
 
